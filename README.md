@@ -27,6 +27,25 @@ Compile production version
 npm run production
 ```
 
+### Vue Router History Mode
+
+Modify __myapp/vue\_app/router/index.js__
+
+```
+let router = new VueRouter({
+    mode: 'history',
+    ....
+```
+And next modify __myapp/start/routes.js__
+
+```
+// Route.on('/').render('frontend')
+
+Route.any('*', ({ view }) => view.render('frontend'))
+```
+
+AdonisJS documentation - [Routing for SPAs](https://adonisjs.com/docs/4.1/routing#_routing_for_spa_s)
+
 ## Run adonis serve dev mode
 
 ```
@@ -38,7 +57,9 @@ You can use ___this.$http___ to access all methos of Axios
 
 ### Headers on authorized routes
 Use ___this.$auth.getToken()___ to access Bearer Token
+
 ```
 let headers = { 'Authorization': this.$auth.getToken() }
+
 this.$http.get(`${window.basePath}/auth/user`, {headers})
 ```
