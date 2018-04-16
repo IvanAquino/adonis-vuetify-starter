@@ -32,3 +32,13 @@ npm run production
 ```
 adonis serve --dev
 ```
+
+### Http Request
+You can use ___this.$http___ to access all methos of Axios
+
+### Headers on authorized routes
+Use ___this.$auth.getToken()___ to access Bearer Token
+```
+let headers = { 'Authorization': this.$auth.getToken() }
+this.$http.get(`${window.basePath}/auth/user`, {headers})
+```
