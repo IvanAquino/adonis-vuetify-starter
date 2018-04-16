@@ -13,7 +13,7 @@
 adonis new myapp --blueprint=IvanAquino/adonis-vuetify-starter
 
 
-##Vue App
+## Vue App
 
 Vue app it's in the folder __vue_app/__, you can modify the different components and compile
 
