@@ -1,8 +1,16 @@
 # Adonis Vuetify starter with prebuilt auth pages
 
-## Clone repo
+##Features
+* Single Page Application
+* Vue and Vue router configured with Auth restricted pages
+* Two Dashboard page examples
+* Prebuilt auth with JWT
+* UI with [Vuetify](https://vuetifyjs.com)
+* Powered by [AdonisJS](https://adonisjs.com)
 
-https://github.com/IvanAquino/adonis-vuetify-starter.git
+## Installation
+
+adonis new myapp --blueprint=IvanAquino/adonis-vuetify-starter
 
 
 ##Vue App
