@@ -9,9 +9,8 @@
 </head>
 <body>
     <main id="app"></main>
-
     <script>
-        window.basePath = "{{ request.url() }}api/v1";
+        window.basePath = "{{ absoluteUrl() }}/api/v1";
     </script>
     {{ script('js/app') }}
 </body>

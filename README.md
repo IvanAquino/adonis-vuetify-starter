@@ -41,6 +41,7 @@ And next modify __myapp/start/routes.js__
 ```
 // Route.on('/').render('frontend')
 
+// At the end of the file
 Route.any('*', ({ view }) => view.render('frontend'))
 ```
 
