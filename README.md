@@ -1,6 +1,6 @@
 # Adonis Vuetify starter with prebuilt auth pages
 
-##Features
+## Features
 * Single Page Application
 * Vue and Vue router configured with Auth restricted pages
 * Two Dashboard page examples
